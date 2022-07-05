@@ -6,7 +6,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 body > * {
@@ -36,11 +36,25 @@ a {
 }
 
 .header {
+    padding-block: 16px;
     justify-content: space-between;
 }
 .header .logo {
     color: #f9faf8;
     font-size: 24px;
+}
+
+/* .hero {
+    justify-content: space-evenly;
+} */
+
+.hero-left {
+    flex:1;
+}
+
+.hero-image  {
+    width:50%;
+
 }
 
 .hero-main-text {
@@ -58,12 +72,38 @@ a {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
+    align-content: center;
+}
+
+.quote-text {
+    font-size: 38px;
+    font-style: italic;
+    font-weight: light;
+}
+
+.quote-author {
+    font-weight: bolder;
+    text-align: right;
 }
 
 .call-to-action {
     background-color: #3882f6;
+    border-radius: 6px;
+    align-self: center;
     display: flex;
     align-items: center;
+    margin: 64px 0;
+    gap: 48px;
+    color: #f9faf8;
+}
+
+.call-to-action-header {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.call-to-action-text {
+
 }
 
 .button {
@@ -71,7 +111,8 @@ a {
     color: #f9faf8;
     border-radius: 4px;
     padding: 8px 32px;
-    border: 1px solid white;
+    margin: 0;
+    border: 1px#f9faf8;
 }
 
 .footer {
